@@ -129,6 +129,9 @@ button {
 
 
 @media (max-width: 415px){
+    body {
+        overflow-x: hidden;
+      }
     .navbar{
         width: 414px;
     }
@@ -144,7 +147,7 @@ button {
         left: 10px;
     }
     .banner{
-        width: 415px;
+        width: 414px;
     }
     .productos{
         width: 335px;
@@ -156,6 +159,9 @@ button {
 }
 
 @media (max-width: 376px){
+    body {
+        overflow-x: hidden;
+      }
     .navbar{
         width: 376px;
     }
