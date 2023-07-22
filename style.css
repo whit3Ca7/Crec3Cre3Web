@@ -125,7 +125,7 @@ button {
     "footer";
 }
 
-@media (min-width: 414px){
+@media (max-width: 414px){
     .navbar{
        max-width: 410px;
     }
