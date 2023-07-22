@@ -125,9 +125,12 @@ button {
     "footer";
 }
 
-@media (max-width: 414px){
+
+
+
+@media (max-width: 314px){
     .navbar{
-       max-width: 410px;
+        width: 100%;
     }
     .text-navbar{
         display: none;
@@ -141,9 +144,7 @@ button {
         left: 10px;
     }
     .banner{
-        width: 440px;
-        overflow-x: hidden;
-        overflow-y: hidden;
+        width: 444px;
     }
     .productos{
         width: 350px;
