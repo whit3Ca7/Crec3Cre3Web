@@ -128,9 +128,9 @@ button {
 
 
 
-@media (max-width: 314px){
+@media (max-width: 415px){
     .navbar{
-        width: 100%;
+        width: 414px;
     }
     .text-navbar{
         display: none;
@@ -144,13 +144,41 @@ button {
         left: 10px;
     }
     .banner{
-        width: 444px;
+        width: 415px;
     }
     .productos{
-        width: 350px;
+        width: 335px;
     }
     .logo{
         position: relative;
         right: 25px;
     }
 }
+
+@media (max-width: 376px){
+    .navbar{
+        width: 376px;
+    }
+    .text-navbar{
+        display: none;
+    }
+    #carrito{
+        display: block;
+        right: 50px;
+    }
+    #info{
+        display: block;
+        left: 10px;
+    }
+    .banner{
+        width: 376px;
+    }
+    .productos{
+        width: 305px;
+    }
+    .logo{
+        position: relative;
+        right: 25px;
+    }
+}
+
