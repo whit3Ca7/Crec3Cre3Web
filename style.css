@@ -132,6 +132,17 @@ button {
     .navbar{
         width: 414px;
     }
+    
+    .navbar_link {
+        color: white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        gap: 78px;
+        position: relative;
+        font-family: 'Cabin', sans-serif;
+    }
+
     .contenedor-productos{
         min-height: 100vh;
         width: 80%;
@@ -159,6 +170,8 @@ button {
     }
     .logo{
         position: relative;
+        width: 150px;
+        height: 110px;
     }
 }
 
