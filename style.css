@@ -319,6 +319,7 @@ button {
         height: 40px;
         background-color: rgb(145, 241, 191);
         border-radius: 5px;
+        margin-top: 10px;
     }
     .boton-contact:hover{
         background-color: rgb(65, 237, 73);
