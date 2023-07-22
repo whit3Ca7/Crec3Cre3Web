@@ -129,9 +129,9 @@ button {
 
 
 @media (max-width: 415px){
-    body {
-        overflow-x: hidden;
-      }
+    .grid-container{
+        overflow: hidden;
+    }
     .navbar{
         width: 414px;
     }
@@ -140,11 +140,9 @@ button {
     }
     #carrito{
         display: block;
-        right: 50px;
     }
     #info{
         display: block;
-        left: 10px;
     }
     .banner{
         width: 414px;
@@ -154,14 +152,10 @@ button {
     }
     .logo{
         position: relative;
-        right: 25px;
     }
 }
 
 @media (max-width: 376px){
-    body {
-        overflow-x: hidden;
-      }
     .navbar{
         width: 376px;
     }
@@ -170,21 +164,15 @@ button {
     }
     #carrito{
         display: block;
-        right: 50px;
     }
     #info{
         display: block;
-        left: 10px;
     }
     .banner{
         width: 376px;
     }
     .productos{
         width: 305px;
-    }
-    .logo{
-        position: relative;
-        right: 25px;
     }
 }
 
