@@ -129,11 +129,18 @@ button {
 
 
 @media (max-width: 415px){
-    .grid-container{
-        overflow: hidden;
-    }
     .navbar{
         width: 414px;
+    }
+    .contenedor-productos{
+        min-height: 100vh;
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(335px, 0fr));
+        gap: 30px;
+        margin-top: 50px;
+        margin-bottom: 70px;
     }
     .text-navbar{
         display: none;
