@@ -17,41 +17,16 @@ body {
     background-color: black;
 }
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-
-/*-------------------------- NAVBAR STYLE----------------------- */
-
-.navbar_link {
-    color: white;
-    font-size: 30px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 35px;
-    position: relative;
-    left: 40px;
-    font-family: 'Cabin', sans-serif;
-}
-.text-navbar:hover{
-    text-decoration: underline;
-}
-#carrito{
-    display: none;
-}
-#info{
-    display: none;
-}
-.logo{
-    width: 200px;
+    min-height: 100vh;
 }
 
 /*---------------------- Main-------------------------------------- */
 .banner {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 86px;
 }
 
 /*---------------------- Parte de los productos----------------------- */
@@ -70,9 +45,6 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
-
-
 
 /*----------------------------Carrusel manual---------------------------*/
 button {
@@ -134,7 +106,7 @@ button {
     position: fixed;
     z-index: 1;
     width: 100%;
-    height: 7rem;
+    height: 6rem;
     grid-area: navbar;
     background-color: rgb(145, 241, 191);
     display: flex;
@@ -158,7 +130,29 @@ button {
     "main"
     "footer";
 }
-
+/*-------------------------- NAVBAR STYLE----------------------- */
+.navbar_link {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+    left: 40px;
+    font-family: 'Cabin', sans-serif;
+}
+.text-navbar:hover{
+    text-decoration: underline;
+}
+#carrito{
+    display: none;
+}
+#info{
+    display: none;
+}
+.logo{
+    width: 200px;
+}
 /*---------------------------- Css de los productos al momento de hacer click ----------------------- */
 .producto-page{
     display: flex;
@@ -208,9 +202,9 @@ button {
 
 
 /*------------------------------------------- Mediaquery mobil -------------------------------------- */
-@media (max-width: 415px){
+@media (max-width: 480px){
     .navbar{
-        width: 414px;
+        width: 30;
         height: 70px;
     }
     .navbar_link {
@@ -223,11 +217,11 @@ button {
         font-family: 'Cabin', sans-serif;
     }
     .contenedor-productos{
-        min-height: 100vh;
-        width: 80%;
+        min-height: 10vh;
+        width: 20.7rem;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(335px, 0fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         margin-top: 20px;
         margin-bottom: 70px;
@@ -259,7 +253,8 @@ button {
         top: 156px;
     }
     .productos{
-        width: 335px;
+        width: 160px;
+        height: 200px;
     }
     .logo{
         position: relative;
@@ -282,75 +277,70 @@ button {
         background-color: rgb(0, 0, 0);
         border-radius: 100px;
     }
-    /* ---------------------------Css de las 3 paginas agregadas --------------------------*/
-    .producto-page{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 60px;
-    }
-    .img-producto{
-        width: 300px;
-        height: 300px;
-        margin-bottom: 0;
-    }
-    .description-product{
-        display: flex;
-        flex-direction: column;
-        margin-top: 1px;
-        align-items: center;
-    }
-    .h1-titulo-producto{
-        color: white;
-        font-size: 35px;
-    }
-    .parrafo-producto{
-        font-size: 15px;
-        color: white;
-        width: 200px;
-        height: 200px;
-        margin-top: 20px;
-    }
-    .boton-contact{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100px;
-        height: 40px;
-        background-color: rgb(145, 241, 191);
-        border-radius: 5px;
-    }
-    .boton-contact:hover{
-        background-color: rgb(65, 237, 73);
-    }
-    .gg-arrow-left {
-       display: none;
-    }
-    .gg-corner-down-left {
-        color: white;
-        margin-top: 50px;
-    }
-
 }
 
-@media (max-width: 376px){
+@media (max-width: 320px){
     .navbar{
-        width: 376px;
+        width: 20rem;
     }
-    .text-navbar{
-        display: none;
+    .logo{
+        width: 7rem;
     }
-    #carrito{
-        display: block;
-    }
-    #info{
-        display: block;
-    }
-    .banner{
-        width: 376px;
+    .contenedor-productos{
+        width: 20rem;
+
     }
     .productos{
-        width: 305px;
+        width: 9.5rem;
     }
+}
+
+ /* ---------------------------Css de las 3 paginas agregadas --------------------------*/
+ .producto-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+}
+.img-producto{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 0;
+}
+.description-product{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    align-items: center;
+}
+.h1-titulo-producto{
+    color: white;
+    font-size: 5vh;
+}
+.parrafo-producto{
+    font-size: 2vh;
+    color: white;
+    width: 15rem;
+    height: 11rem;
+    margin-top: 1rem;
+}
+.boton-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 2rem;
+    background-color: rgb(145, 241, 191);
+    border-radius: 5px;
+}
+.boton-contact:hover{
+    background-color: rgb(65, 237, 73);
+}
+.gg-arrow-left {
+   display: none;
+}
+.gg-corner-down-left {
+    color: white;
+    margin-top: 50px;
 }
 
