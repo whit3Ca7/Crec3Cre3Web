@@ -277,6 +277,56 @@ button {
         background-color: rgb(0, 0, 0);
         border-radius: 100px;
     }
+
+    /* ---------------------------Css de las 3 paginas agregadas --------------------------*/
+    .producto-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .img-producto{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 0;
+    }
+    .description-product{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1px;
+        align-items: center;
+    }
+    .h1-titulo-producto{
+        color: white;
+        font-size: 35px;
+    }
+    .parrafo-producto{
+        font-size: 15px;
+        color: white;
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .boton-contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 40px;
+        background-color: rgb(145, 241, 191);
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .boton-contact:hover{
+        background-color: rgb(65, 237, 73);
+    }
+    .gg-arrow-left {
+       display: none;
+    }
+    .gg-corner-down-left {
+        color: white;
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 320px){
