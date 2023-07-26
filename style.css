@@ -4,6 +4,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/corner-down-left.css');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 
 *{
@@ -102,16 +103,12 @@ button {
 
 
 /*--------------------  MAQUETADO RESPONSIVE CSS GRID /*-------------------------------------- */
-.navbar {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 6rem;
+.navbar{
     grid-area: navbar;
-    background-color: rgb(145, 241, 191);
     display: flex;
-    justify-content: center;
+
 }
+
 .main {
     grid-area: main;
 }
@@ -132,15 +129,20 @@ button {
 }
 /*-------------------------- NAVBAR STYLE----------------------- */
 .navbar_link {
-    color: white;
-    font-size: 30px;
-    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
     align-items: center;
-    gap: 35px;
-    position: relative;
-    left: 40px;
-    font-family: 'Cabin', sans-serif;
+    height: 6rem;
+    background-color: rgb(145, 241, 191);
+    display: flex;
+    justify-content: space-around;
 }
+.text-navbar{
+    font-size: 30px;
+    font-family: 'Barlow', sans-serif;
+}
+
 .text-navbar:hover{
     text-decoration: underline;
 }
@@ -203,17 +205,13 @@ button {
 
 /*------------------------------------------- Mediaquery mobil -------------------------------------- */
 @media (max-width: 480px){
-    .navbar{
-        width: 30;
-        height: 70px;
-    }
     .navbar_link {
-        color: white;
+        height: 4rem;
+        z-index: 1;
+        position: fixed;
         font-size: 30px;
         display: flex;
         align-items: center;
-        gap: 78px;
-        position: relative;
         font-family: 'Cabin', sans-serif;
     }
     .contenedor-productos{
@@ -223,7 +221,7 @@ button {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-bottom: 70px;
     }
     .text-navbar{
@@ -266,7 +264,7 @@ button {
         gap: 20px;
     }
     .banner{
-        margin-top: 60px;
+        margin-top: 3.3rem;
     }
     .redes-borde{
         display: flex;
@@ -315,7 +313,7 @@ button {
         height: 40px;
         background-color: rgb(145, 241, 191);
         border-radius: 5px;
-        margin-top: 10px;
+        margin-top: 3rem;
     }
     .boton-contact:hover{
         background-color: rgb(65, 237, 73);
@@ -337,15 +335,32 @@ button {
         width: 7rem;
     }
     .contenedor-productos{
-        width: 20rem;
+        width: 19rem;
 
     }
     .productos{
-        width: 9.5rem;
+        width: 9rem;
+    }
+    .description-product{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1px;
+        align-items: center;
+        height: 1rem;
+    }
+    .boton-contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 40px;
+        background-color: rgb(145, 241, 191);
+        border-radius: 5px;
+        margin-top: 2rem;
     }
 }
 
- /* ---------------------------Css de las 3 paginas agregadas --------------------------*/
+ /* ---------------------------Css de las 3 paginas de cada producto --------------------------*/
  .producto-page{
     display: flex;
     flex-direction: column;
