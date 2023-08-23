@@ -388,6 +388,10 @@ button {
         position: absolute;
         top: 170vh;
     }
+
+    .producto {
+        display: none;
+    }
 }
 
 @media (max-width: 414px) {
@@ -414,6 +418,10 @@ button {
         gap: 15px;
         margin-top: 40px;
         margin-bottom: 70px;
+    }
+
+    .producto {
+        display: none;
     }
 }
 
@@ -627,6 +635,10 @@ button {
         margin-bottom: 70px;
     }
 
+    .producto {
+        display: none;
+    }
+
     .productos-2 {
         width: 170px;
         height: 170px;
@@ -651,6 +663,10 @@ button {
         gap: 15px;
         margin-top: 40px;
         margin-bottom: 70px;
+    }
+
+    .producto {
+        display: none;
     }
 
     .productos-2 {
