@@ -51,6 +51,10 @@ body {
     object-fit: cover;
 }
 
+.productos-2 {
+    display: none;
+}
+
 /*----------------------------Carrusel manual---------------------------*/
 button {
     position: absolute;
@@ -178,12 +182,14 @@ button {
     width: 170px;
     height: 80px;
 }
+
 /*---------------------------- Sobre Nostros css ----------------------- */
-.contenedor-sobrenosotros{
+.contenedor-sobrenosotros {
     display: flex;
     justify-content: center;
 }
-.mantenimiento{
+
+.mantenimiento {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -223,7 +229,7 @@ button {
 .parrafo-producto {
     font-size: 15px;
     color: white;
-    width: 320px;
+    width: 362px;
     height: 150px;
     font-family: 'Noto Sans Multani', sans-serif;
     margin-top: 20px;
@@ -308,7 +314,6 @@ button {
     }
 }
 
-
 @media (max-width: 855px) {
     .navegation {
         display: flex;
@@ -325,28 +330,30 @@ button {
         position: absolute;
         transform: translateX(-70%);
     }
+
     .bannerProductos {
         margin-top: 15vh;
         width: 40rem;
-        
+
     }
-    .producto-page{
+
+    .producto-page {
         display: flex;
         flex-direction: column;
     }
+
     .h1-titulo-producto {
         color: white;
         font-size: 75px;
     }
-    
+
     .parrafo-producto {
         font-size: 25px;
         color: white;
-        width: 400px;
-        height: 200px;
-        margin-top: 20px;
+        width: 550px;
+        height: 70vh;
     }
-    
+
     .boton-contact {
         font-size: 25px;
         display: flex;
@@ -356,7 +363,57 @@ button {
         height: 60px;
         background-color: rgb(145, 241, 191);
         border-radius: 5px;
-        margin: 30px;
+        position: absolute;
+        top: 150vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .parrafo-producto {
+        font-size: 25px;
+        color: white;
+        width: 550px;
+        height: 70vh;
+    }
+
+    .boton-contact {
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 60px;
+        background-color: rgb(145, 241, 191);
+        border-radius: 5px;
+        position: absolute;
+        top: 170vh;
+    }
+}
+
+@media (max-width: 414px) {
+    .boton-contact {
+        display: flex;
+        font-size: 15px;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 40px;
+        background-color: rgb(145, 241, 191);
+        border-radius: 5px;
+        margin-top: 2rem;
+        position: absolute;
+        top: 125vh;
+    }
+
+    .contenedor-productos {
+        min-height: 10vh;
+        width: 26.7rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 15px;
+        margin-top: 40px;
+        margin-bottom: 70px;
     }
 }
 
@@ -373,11 +430,11 @@ button {
 
     .contenedor-productos {
         min-height: 10vh;
-        width: 20.7rem;
+        width: 25.7rem;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        grid-template-columns: repeat(2, 200px);
+        gap: 15px;
         margin-top: 40px;
         margin-bottom: 70px;
     }
@@ -418,6 +475,13 @@ button {
     .productos {
         width: 160px;
         height: 200px;
+        display: none;
+    }
+
+    .productos-2 {
+        width: 200px;
+        height: 200px;
+        display: block;
     }
 
     .logo {
@@ -473,20 +537,22 @@ button {
     .parrafo-producto {
         font-size: 15px;
         color: white;
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 500px;
         margin-top: 20px;
     }
 
     .boton-contact {
         display: flex;
+        font-size: 15px;
         align-items: center;
         justify-content: center;
         width: 100px;
         height: 40px;
         background-color: rgb(145, 241, 191);
         border-radius: 5px;
-        margin-top: 2rem;
+        position: absolute;
+        top: 115vh;
     }
 
     .boton-contact:hover {
@@ -509,14 +575,53 @@ button {
 
     #anteriorBtnimg {
         position: absolute;
-        transform: translateX(-598%); 
+        transform: translateX(-598%);
         top: 250px;
     }
-    
+
     #siguienteBtnimg {
         position: absolute;
         transform: translateX(-60%);
         top: 250px;
+    }
+}
+
+@media (max-width: 376px) {
+    .parrafo-producto {
+        font-size: 15px;
+        color: white;
+        width: 300px;
+        height: 500px;
+        margin-top: 20px;
+    }
+
+    .boton-contact {
+        display: flex;
+        font-size: 15px;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 40px;
+        background-color: rgb(145, 241, 191);
+        border-radius: 5px;
+        position: absolute;
+        top: 123vh;
+    }
+
+    .contenedor-productos {
+        min-height: 10vh;
+        width: 22rem;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 175px);
+        gap: 5px;
+        padding: 5px;
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+    .productos-2{
+        width: 170px;
+        height: 170px;
     }
 }
 
@@ -530,11 +635,19 @@ button {
     }
 
     .contenedor-productos {
-        width: 19rem;
+        min-height: 10vh;
+        width: 19.3rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 145px);
+        gap: 15px;
+        margin-top: 40px;
+        margin-bottom: 70px;
     }
 
-    .productos {
-        width: 9rem;
+    .productos-2 {
+        width: 150px;
+        height: 150px;
     }
 
     .producto-page {
@@ -545,7 +658,7 @@ button {
     }
 
     .img-producto {
-        width: 20rem;
+        width: 15rem;
         height: 20rem;
         margin-bottom: -2.3rem;
     }
@@ -565,8 +678,8 @@ button {
     .parrafo-producto {
         font-size: 15px;
         color: white;
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 450px;
         margin-top: 20px;
     }
 
@@ -579,7 +692,8 @@ button {
         height: 40px;
         background-color: rgb(145, 241, 191);
         border-radius: 5px;
-        margin-top: 0rem;
+        position: absolute;
+        top: 190vh;
     }
 
     .boton-contact:hover {
