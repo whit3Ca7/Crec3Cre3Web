@@ -1,4 +1,4 @@
-const imagenes = ["./img/puma verde.jpg", "./img/aftertattoo2.jpg"];
+const imagenes = ["./img/pumaverde2.jpg","./img/pumaverde1.jpg", "./img/pumaverde3.jpg"];
 let indice = 0;
 const sliderImg = document.getElementById("sliderImg");
 const anteriorBtn = document.getElementById("anteriorBtnimg");

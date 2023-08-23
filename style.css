@@ -63,10 +63,14 @@ button {
 
 #anteriorBtn {
     left: 10px;
+    position: absolute;
+    transform: translateY(-100%);
 }
 
 #siguienteBtn {
     right: 10px;
+    position: absolute;
+    transform: translateY(-100%);
 }
 
 /*----------------------------------------------------------------------*/
@@ -169,8 +173,23 @@ button {
 }
 
 .logo {
-    width: 200px;
+    width: 170px;
+    height: 80px;
 }
+/*---------------------------- Sobre Nostros css ----------------------- */
+.contenedor-sobrenosotros{
+    display: flex;
+    justify-content: center;
+}
+.mantenimiento{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 200px;
+    color: rgb(207, 207, 207);
+    font-size: 120px;
+}
+
 
 /*---------------------------- Css de los productos al momento de hacer click ----------------------- */
 .producto-page {
@@ -205,6 +224,7 @@ button {
     width: 200px;
     height: 200px;
     margin-top: 20px;
+    text-align: center;
 }
 
 .boton-contact {
@@ -240,11 +260,13 @@ button {
 #anteriorBtnimg {
     position: absolute;
     transform: translateX(-1036%);
+    top: 55vh;
 }
 
 #siguienteBtnimg {
     position: absolute;
     transform: translateX(10%);
+    top: 55vh;
 }
 
 
@@ -393,8 +415,8 @@ button {
 
     .logo {
         position: relative;
-        width: 150px;
-        height: 110px;
+        width: 100px;
+        height: 40px;
     }
 
     .redes {

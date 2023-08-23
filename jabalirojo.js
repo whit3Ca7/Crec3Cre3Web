@@ -1,4 +1,4 @@
-const imagenes = ["./img/jabalirojo.png", "./img/jabali rojo.jpg"];
+const imagenes = ["./img/jabalirojo1.jpg", "./img/jabalirojo2.jpg", "./img/jabalirojo3.jpg"];
 let indice = 0;
 const sliderImg = document.getElementById("sliderImg");
 const anteriorBtn = document.getElementById("anteriorBtnimg");
