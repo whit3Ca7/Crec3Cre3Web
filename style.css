@@ -525,7 +525,7 @@ button {
     .description-product {
         display: flex;
         flex-direction: column;
-        margin-top: -17px;
+        margin-top: -80px;
         align-items: center;
     }
 
@@ -552,7 +552,7 @@ button {
         background-color: rgb(145, 241, 191);
         border-radius: 5px;
         position: absolute;
-        top: 115vh;
+        top: 110vh;
     }
 
     .boton-contact:hover {
@@ -595,6 +595,13 @@ button {
         margin-top: 20px;
     }
 
+    .description-product {
+        display: flex;
+        flex-direction: column;
+        margin-top: -80px;
+        align-items: center;
+    }
+
     .boton-contact {
         display: flex;
         font-size: 15px;
@@ -605,7 +612,7 @@ button {
         background-color: rgb(145, 241, 191);
         border-radius: 5px;
         position: absolute;
-        top: 123vh;
+        top: 110vh;
     }
 
     .contenedor-productos {
@@ -619,7 +626,8 @@ button {
         margin-top: 40px;
         margin-bottom: 70px;
     }
-    .productos-2{
+
+    .productos-2 {
         width: 170px;
         height: 170px;
     }
@@ -666,7 +674,7 @@ button {
     .description-product {
         display: flex;
         flex-direction: column;
-        margin-top: -18px;
+        margin-top: -80px;
         align-items: center;
     }
 
@@ -693,7 +701,7 @@ button {
         background-color: rgb(145, 241, 191);
         border-radius: 5px;
         position: absolute;
-        top: 190vh;
+        top: 175vh;
     }
 
     .boton-contact:hover {
