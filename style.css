@@ -28,6 +28,12 @@ body {
     min-height: 100vh;
 }
 
+.line-space {
+    width: 1200px;
+    height: 1px;
+    background-color: white;
+}
+
 /*---------------------- Main-------------------------------------- */
 .banner {
     width: 100%;
@@ -137,7 +143,7 @@ button {
     grid-area: footer;
     width: 100%;
     height: 200px;
-    background-color: rgb(145, 241, 191);
+    background-color: rgb(0, 0, 0);
 }
 
 .grid-container {
@@ -156,14 +162,16 @@ button {
     width: 100%;
     align-items: center;
     height: 6rem;
-    background-color: rgb(145, 241, 191);
+    background-color: rgba(0, 0, 0, 0.929);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .text-navbar {
-    font-size: 30px;
+    font-size: 22px;
     font-family: 'Barlow', sans-serif;
+    margin-right: 107px;
+    color: rgba(248, 249, 249, 0.81);
 }
 
 .text-navbar:hover {
@@ -179,8 +187,17 @@ button {
 }
 
 .logo {
-    width: 170px;
-    height: 80px;
+    width: 300px;
+    height: 52px;
+    margin-right: 156px;
+}
+
+.gg-info {
+    color: rgb(145, 241, 191);
+}
+
+.gg-shopping-cart {
+    color: rgb(145, 241, 191);
 }
 
 /*---------------------------- Sobre Nostros css ----------------------- */
@@ -196,6 +213,35 @@ button {
     top: 200px;
     color: rgb(207, 207, 207);
     font-size: 120px;
+}
+
+
+/*--------------------------------Servicios css------------------------------  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+.contenedor-servicios {
+    display: flex;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 52px;
+}
+
+.titulos-servicios {
+    color: rgb(97, 239, 152);
+    display: flex;
+    font-size: 4vh;
+}
+
+.servicios-text {
+    color: white;
+    font-size: 3vh;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -321,6 +367,23 @@ button {
         max-width: 300px;
     }
 
+    .logo {
+        width: 20rem;
+        margin-left: 150px;
+    }
+
+    .text-navbar {
+        display: none;
+    }
+
+    #info {
+        display: block;
+    }
+
+    #carrito {
+        display: block;
+    }
+
     #anteriorBtnimg {
         position: absolute;
         transform: translateX(-1150%);
@@ -329,6 +392,20 @@ button {
     #siguienteBtnimg {
         position: absolute;
         transform: translateX(-70%);
+    }
+
+    #siguienteBtn {
+        position: absolute;
+        transform: translateX(-10%);
+        top: 195px;
+        background-color: transparent;
+    }
+
+    #anteriorBtn {
+        position: absolute;
+        transform: translateX(-10%);
+        top: 195px;
+        background-color: transparent;
     }
 
     .bannerProductos {
@@ -366,14 +443,59 @@ button {
         position: absolute;
         top: 150vh;
     }
+
+    /*Servicos css */
+    .contenedor-servicios {
+        display: flex;
+    }
+
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+
+    .titulos-servicios {
+        color: rgb(97, 239, 152);
+        display: flex;
+        font-size: 2rem;
+    }
+
+    .servicios-text {
+        width: 45rem;
+        color: white;
+        font-size: 1.5rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .line-space {
+        display: none;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .parrafo-producto {
         font-size: 25px;
         color: white;
         width: 550px;
         height: 70vh;
+    }
+
+    .text-navbar {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 10rem;
+    }
+
+    #carrito {
+        display: block;
+    }
+
+    #info {
+        display: block;
     }
 
     .boton-contact {
@@ -392,6 +514,50 @@ button {
     .producto {
         display: none;
     }
+
+    #siguienteBtn {
+        position: absolute;
+        transform: translateX(-10%);
+        top: 195px;
+        background-color: transparent;
+    }
+
+    #anteriorBtn {
+        position: absolute;
+        transform: translateX(-10%);
+        top: 195px;
+        background-color: transparent;
+    }
+
+    /*Servicos css */
+    .contenedor-servicios {
+        display: flex;
+    }
+
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+
+    .titulos-servicios {
+        color: rgb(97, 239, 152);
+        display: flex;
+        font-size: 2rem;
+    }
+
+    .servicios-text {
+        width: 43rem;
+        color: white;
+        font-size: 1.5rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .line-space {
+        display: none;
+    }
+
 }
 
 @media (max-width: 414px) {
@@ -434,16 +600,17 @@ button {
         display: flex;
         align-items: center;
         font-family: 'Cabin', sans-serif;
+        justify-content: space-around;
     }
 
     .contenedor-productos {
         min-height: 10vh;
-        width: 25.7rem;
+        width: 25.4rem;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2, 200px);
-        gap: 15px;
-        margin-top: 40px;
+        gap: 7px;
+        margin-top: 20px;
         margin-bottom: 70px;
     }
 
@@ -472,12 +639,16 @@ button {
 
     #anteriorBtn {
         border-radius: 0;
-        top: 156px;
+        transform: translateX(-10%);
+        top: 120px;
+        background-color: transparent;
     }
 
     #siguienteBtn {
         border-radius: 0;
-        top: 156px;
+        transform: translateX(-10%);
+        top: 120px;
+        background-color: transparent;
     }
 
     .productos {
@@ -494,8 +665,10 @@ button {
 
     .logo {
         position: relative;
-        width: 100px;
+        width: 15rem;
         height: 40px;
+        margin-right: 0px;
+        margin-left: 5px;
     }
 
     .redes {
@@ -584,17 +757,72 @@ button {
     #anteriorBtnimg {
         position: absolute;
         transform: translateX(-598%);
-        top: 250px;
+        top: 270px;
+        background-color: transparent;
     }
 
     #siguienteBtnimg {
         position: absolute;
         transform: translateX(-60%);
-        top: 250px;
+        top: 270px;
+        background-color: transparent;
+    }
+
+    .click-servicios {
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        margin: 10px;
+        align-items: center;
+        border: solid 1px rgb(94, 239, 183);
+        background-color: rgba(127, 255, 212, 0.611);
+    }
+
+    .pstyle {
+        display: flex;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+
+    .click2-servicios {
+        width: 10rem;
+        height: 2rem;
+    }
+
+    /*Servicos css */
+    .contenedor-servicios {
+        display: flex;
+    }
+
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulos-servicios {
+        color: rgb(97, 239, 152);
+        display: flex;
+        width: 310px;
+        font-size: 25px;
+    }
+
+    .servicios-text {
+        color: white;
+        width: 320px;
+        height: 100px;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .line-space {
+        display: none;
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 391px) {
     .parrafo-producto {
         font-size: 15px;
         color: white;
@@ -608,6 +836,29 @@ button {
         flex-direction: column;
         margin-top: -80px;
         align-items: center;
+    }
+
+    .click-servicios {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        align-items: center;
+    }
+
+    .logo {
+        margin-left: 5px;
+    }
+
+    .pstyle {
+        display: flex;
+        justify-content: center;
+        color: rgb(129, 239, 142);
+        font-weight: bold;
+    }
+
+    .click2-servicios {
+        width: 8rem;
+        height: 2rem;
     }
 
     .boton-contact {
@@ -643,6 +894,37 @@ button {
         width: 170px;
         height: 170px;
     }
+
+   /*Servicos css */
+   .contenedor-servicios {
+       display: flex;
+   }
+
+   .servicios {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .titulos-servicios {
+       color: rgb(97, 239, 152);
+       display: flex;
+       width: 300px;
+       font-size: 25px;
+   }
+
+   .servicios-text {
+       color: white;
+       width: 300px;
+       height: 200px;
+       font-size: 20px;
+       font-family: 'Open Sans', sans-serif;
+   }
+
+   .line-space {
+       display: none;
+   }
 }
 
 @media (max-width: 320px) {
@@ -650,8 +932,34 @@ button {
         width: 20rem;
     }
 
+    .navbar_link {
+        background-color: black;
+    }
+
     .logo {
-        width: 7rem;
+        width: 11rem;
+        height: 2rem;
+        margin-left: 5px;
+    }
+
+    .click-servicios {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        align-items: center;
+        border-radius: 15px;
+    }
+
+    .pstyle {
+        display: flex;
+        justify-content: center;
+        color: rgb(129, 239, 142);
+        font-weight: bold;
+    }
+
+    .click2-servicios {
+        width: 10rem;
+        height: 2rem;
     }
 
     .contenedor-productos {
@@ -660,13 +968,31 @@ button {
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2, 145px);
-        gap: 15px;
-        margin-top: 40px;
+        gap: 10px;
+        margin-top: -1px;
         margin-bottom: 70px;
     }
 
     .producto {
         display: none;
+    }
+
+    .bannerProductos {
+        width: 15rem;
+    }
+
+    #siguienteBtnimg {
+        position: absolute;
+        transform: translateX(-60%);
+        top: 195px;
+        background-color: transparent;
+    }
+
+    #anteriorBtnimg {
+        position: absolute;
+        transform: translateX(-437%);
+        top: 195px;
+        background-color: transparent;
     }
 
     .productos-2 {
@@ -731,6 +1057,32 @@ button {
     .gg-corner-down-left {
         color: white;
         margin-top: 50px;
+    }
+
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulos-servicios {
+        color: rgb(97, 239, 152);
+        display: flex;
+        width: 240px;
+        font-size: 25px;
+    }
+
+    .servicios-text {
+        color: white;
+        width: 240px;
+        height: 150px;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .line-space {
+        display: none;
     }
 
 }
