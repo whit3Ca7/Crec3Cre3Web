@@ -1312,7 +1312,7 @@ button {
     }
 }
 
-@media (min-width: 200px) {
+@media (max-width: 320px) {
     .boton-contact-dorado {
         display: flex;
         align-items: center;
