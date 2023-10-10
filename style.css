@@ -890,7 +890,7 @@ button {
         color: white;
         width: 320px;
         height: 100px;
-        font-size: 15px;
+        font-size: 13px;
         font-family: 'Open Sans', sans-serif;
     }
 
@@ -915,7 +915,7 @@ button {
         background-color: rgb(145, 241, 191);
         border-radius: 5px;
         position: absolute;
-        bottom: -25vh;
+        bottom: -20vh;
     }
 
     .precio-producto-dorado {
@@ -968,7 +968,7 @@ button {
         background-color: rgb(145, 241, 191);
         border-radius: 5px;
         position: absolute;
-        bottom: -26vh;
+        bottom: -20vh;
     }
 
 
@@ -1078,7 +1078,7 @@ button {
         color: white;
         width: 300px;
         height: 200px;
-        font-size: 20px;
+        font-size: 16px;
         font-family: 'Open Sans', sans-serif;
     }
 
